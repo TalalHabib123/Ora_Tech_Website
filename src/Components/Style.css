@@ -1,0 +1,206 @@
+.coverpage{
+  height: 100vh;
+  width: 100vw; 
+  position:relative;
+  background-image: url('CoverPage.jpg');
+  background-size: cover;
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  color: white;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0,0, 0.5);
+  overflow: hidden;
+}
+
+.overlay h1{
+  padding-top: 5%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay p{
+  padding: 5%;
+  padding-top: 2%;
+  text-align: center;
+}
+
+.company{
+  font-weight: bold;
+  font-size: larger;
+}
+
+.navbar{
+  text-align: center;
+  justify-content: center;
+}
+
+.insights{
+  color: rgb(0, 0, 0);
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.vision{
+  color: rgb(0, 0, 0);
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.vision h1{
+  padding-top: 10%;
+  color: black;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Lumanosimo', cursive;
+}
+
+.vision p{
+  padding-top: 3%;
+  padding-bottom: 5%;
+  font-size: 30px;
+  font-family: 'Fasthand', cursive;
+}
+
+.com_insights h1{
+  padding-top: 5%;
+  color: black;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 3.75rem;
+
+}
+
+.com_insights p{
+  padding-top: 2%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 4%;
+  font-size: 24px;
+}
+
+.quote{
+  width: 100%;
+  height: 70%;
+  color: rgb(0, 0, 0);
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  background-color:rgba(0,0,0,0.5);
+  background-image: url('./Images/insight_full.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.quote p{
+  padding-top: 10%;
+  padding-bottom: 9%;
+  padding-right: 55%;
+  padding-left: 5%;
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+@media only screen and (max-width:1500px){
+  .quote p{
+      padding-top: 10%;
+      padding-bottom: 9%;
+      padding-right: 45%;
+      padding-left: 5%;
+      text-align: justify;
+      font-size: 1.5rem;
+      color: #ffffff;
+  }
+}
+
+@media only screen and (max-width:900px) {
+
+    .com_insights h1{
+      padding-top: 5%;
+      color: black;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-weight: bold;
+      font-style: oblique;
+      font-size: 2.25rem;
+
+    }
+    .com_insights p{
+      padding-top: 2%;
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-bottom: 4%;
+      font-size: 1rem;
+    }
+
+    .vision h1{
+      padding-top: 5%;
+      color: black;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-weight: bold;
+      font-style: oblique;
+      font-size: 2rem;
+
+    }
+    .vision p{
+      padding-top: 2%;
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-bottom: 4%;
+      font-size: 1.25rem;
+    }
+
+    .quote{
+      background-color:rgba(0,0,0,.9);
+      background-image: url('./Images/insights_half.jpg');
+      background-size: cover;
+    }
+
+    .quote p{
+      padding-top: 7%;
+      padding-bottom: 6%;
+      padding-right: 15%;
+      padding-left: 15%;
+      text-align: justify;
+      font-size: 1.25rem;
+      color: rgba(0, 0, 0, 0.9);
+      font-weight: bold;
+    }
+  
+}
