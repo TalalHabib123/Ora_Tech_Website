@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Ora_Tech_Website/static/css/main.073c9b0a.css",
+    "main.js": "/Ora_Tech_Website/static/js/main.ea57769b.js",
+    "static/js/787.14c871d0.chunk.js": "/Ora_Tech_Website/static/js/787.14c871d0.chunk.js",
+    "static/media/logo.svg": "/Ora_Tech_Website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Ora_Tech_Website/index.html",
+    "main.073c9b0a.css.map": "/Ora_Tech_Website/static/css/main.073c9b0a.css.map",
+    "main.ea57769b.js.map": "/Ora_Tech_Website/static/js/main.ea57769b.js.map",
+    "787.14c871d0.chunk.js.map": "/Ora_Tech_Website/static/js/787.14c871d0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.ea57769b.js"
+  ]
+}
