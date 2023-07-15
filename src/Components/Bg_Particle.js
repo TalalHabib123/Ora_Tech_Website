@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import "./Style.css";
 
 const Bg_Particle=()=>{
     const particlesInit = useCallback(async engine => {
@@ -49,10 +50,10 @@ const Bg_Particle=()=>{
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#000000",
                     },
                     links: {
-                        color: "#ffffff",
+                        color: "#000000",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,

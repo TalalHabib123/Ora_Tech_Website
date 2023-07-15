@@ -11,7 +11,7 @@ function NavbarCom()
         <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark" fixed='top'>
           <Container>
             <Navbar.Brand className='company' href="#home">Ora Tech Systems</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => document.activeElement.blur()}/>
             <Navbar.Collapse id="basic-navbar-nav" className='navbar'>
               <Nav className='mx-auto'>
                 <Nav.Link href="#home">Company Insights</Nav.Link>
