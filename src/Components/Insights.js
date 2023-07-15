@@ -42,8 +42,8 @@ const Insights=()=>{
                     What we Help In:
                 </h1>
             </div>
+            <CardComponent cardList={cardList} className="card_comps"/>
         </div>
-        <CardComponent cardList={cardList}/>
         </>
     )
 }

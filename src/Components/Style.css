@@ -55,6 +55,11 @@ hr{
   justify-content: center;
 }
 
+.service{
+  width: 100%;
+  margin: 0%;
+  background-color: rgb(158, 148, 134);
+}
 
 .insights{
   color: rgb(0, 0, 0);
@@ -94,6 +99,19 @@ hr{
   overflow: hidden;
 }
 
+.service h1{
+
+  padding-top: 5%;
+  color: black;
+  align-self: center;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 3.75rem;
+  padding-bottom: 1%;
+}
+
 .expect_us h1{
   padding-top: 10%;
   padding-bottom: 5%;
@@ -124,6 +142,28 @@ hr{
   padding-bottom: 4%;
   font-size: 24px;
   font-family: cursive;
+}
+
+.row{
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-bottom: 30px;
+}
+
+.col{
+  padding: 3%;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.col:hover{
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .quote{
@@ -160,7 +200,7 @@ hr{
   background-color: #ffffff;
 }
 
-.card-body {
+.card-body-comp {
   display: flex;
   align-items: center;
 }
@@ -179,7 +219,7 @@ hr{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 10%;
+  padding-bottom: 7%;
 }
 
 .icon{
@@ -204,6 +244,8 @@ hr{
 
 
 
+
+
 @media only screen and (max-width:1500px){
   .quote p{
       padding-top: 10%;
@@ -216,9 +258,14 @@ hr{
   }
 }
 
+
 @media only screen and (max-width:900px) {
 
-
+    .service h1{
+      padding-top: 10%;
+      font-size: 2rem;
+      padding-bottom: 10%;
+    }
     .overlay h1{
       font-size:  45px;
     }

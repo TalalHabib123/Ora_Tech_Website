@@ -8,7 +8,7 @@ const CardComponent = ({ cardList }) => {
     <div className="card-row">
       {cardList.map((card, index) => (
         <Card key={index} className="custom-card">
-          <Card.Body className="card-body">
+          <Card.Body className="card-body-comp">
             <div className="icon-container">
               <FontAwesomeIcon icon={card.icon} size="4x" className="icon" />
             </div>
