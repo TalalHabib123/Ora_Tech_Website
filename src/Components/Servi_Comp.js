@@ -31,7 +31,8 @@ const Card = styled.div`
 `;
 const Servi_Comp = () => {
     let win_width=window.innerWidth;
-    if(win_width>500){
+    let win_height=window.innerHeight;
+    if(win_width>500 || win_height<400){
         return (
             <CardGridWrapper>
                 <Card style={{background:'url(https://www.cioaxis.com/wp-content/uploads/2021/04/Cloud-INfrasture220604499.jpeg) center / cover', color:"#000000"}}>Oracle Cloud Infrastructure</Card>
