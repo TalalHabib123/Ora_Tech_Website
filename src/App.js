@@ -1,8 +1,9 @@
 import './App.css';
 import NavbarCom from './Components/NavbarCom';
-import Insights from './Components/Insights';
+import Insights from './Components/Insights/Insights';
 import CoverPage from './Components/CoverPage';
-import Service from './Components/Services';
+import Service from './Components/Service/Services';
+import Journey from './Components/Journey/Journey';
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
         <NavbarCom className="Navigation" />
         <Insights />
         <Service />
+        <Journey />
       </>
   );
 }
