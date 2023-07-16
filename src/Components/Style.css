@@ -351,8 +351,8 @@ hr{
     }
 
     .carousel-item{
-      margin-top: 30%;
-      margin-bottom: 30%;
+      margin-bottom: 35%;
       flex-direction: column;
+      padding-top: 55%;
     }
 }
