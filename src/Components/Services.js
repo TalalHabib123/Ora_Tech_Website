@@ -1,6 +1,7 @@
 import React from "react";
 import "./Style.css";
 import Servi_Comp from "./Servi_Comp";
+import ControlledCarousel from "./Carasouel";
 
 function Service(){
     return(

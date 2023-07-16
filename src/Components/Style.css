@@ -6,13 +6,29 @@
   background-size: cover;
 }
 
-#tsparticles {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.slide-show{
+  padding-left: 10%;
+  padding-right:10%;
+  padding-bottom: 5%;
+  display: flex;
 }
+
+.custom-cara{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  background-color: #62eec4;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.carousel-item{
+  text-align: center;
+  padding: 10%;
+}
+
 
 hr{
   width: 50%;
@@ -322,4 +338,21 @@ hr{
       font-weight: bold;
     }
   
+
+    .slide-show{
+      padding-left: 0%;
+      padding-right:0%;
+      padding-bottom: 5%;
+      display: flex;
+    }
+    .custom-cara{
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .carousel-item{
+      margin-top: 25%;
+      margin-bottom: 20%;
+      flex-direction: column;
+    }
 }

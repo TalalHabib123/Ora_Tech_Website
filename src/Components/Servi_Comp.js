@@ -2,6 +2,7 @@ import React from 'react';
 import "./Style.css";
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-bootstrap';
+import ControlledCarousel from './Carasouel';
 
 const CardGridWrapper = styled.div`
   display: grid;
@@ -46,32 +47,7 @@ const Servi_Comp = () => {
     }
     else{
         return(
-            <Container fluid>
-                <Row>
-                    <Col>Oracle Cloud Infrastructure</Col>
-                </Row>
-                <Row>
-                    <Col>Oracle Cloud Applications</Col>
-                </Row>
-                <Row>
-                    <Col>Oracle Fusion Middleware</Col>
-                </Row>
-                <Row>
-                    <Col>BlockChain</Col>
-                </Row>
-                <Row>
-                    <Col>Hardware & Software</Col>
-                </Row>
-                <Row>
-                    <Col>Enterprise Wide Integration</Col>
-                </Row>
-                <Row>
-                    <Col>Software Solutions Experience</Col>
-                </Row>
-                <Row>
-                    <Col>Hardware Solutions Experience</Col>
-                </Row>
-            </Container>
+            <ControlledCarousel />
         );
     }
   
