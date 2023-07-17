@@ -30,11 +30,10 @@ const Card = styled.div`
 `;
 const Servi_Comp = () => {
     let win_width=window.innerWidth;
-    let win_height=window.innerHeight;
     if(win_width>500){
         return (
             <CardGridWrapper>
-                <Card style={{background:'url(https://www.cioaxis.com/wp-content/uploads/2021/04/Cloud-INfrasture220604499.jpeg) center / cover', color:"#000000"}}>Oracle Cloud Infrastructure</Card>
+                <Card style={{background:'url(https://www.cloud4c.com/sites/default/files/2021-12/oracle-cloud-services-1_0.jpg) center / cover'}}>Oracle Cloud Infrastructure</Card>
                 <Card style={{background:'url(https://www.nagarro.com/hubfs/Oracle%20cloud%20infrastructure.png) center / cover'}}>Oracle Cloud Applications</Card>
                 <Card style={{background:'url(https://eu-images.contentstack.com/v3/assets/blt66983808af36a8ef/blt3fb601577ca72826/632dfca7378d7a585394478e/cloudarchitecture-ArtemisDiana_AlamyStockPhoto.jpg) center / cover'}}>Oracle Fusion Middleware</Card>
                 <Card style={{background:'url(https://www.hyperledger.org/wp-content/uploads/2016/08/hl_bg_banner.jpg) center / cover'}}>BlockChain</Card>

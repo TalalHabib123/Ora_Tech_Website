@@ -1,15 +1,18 @@
 import './App.css';
-import NavbarCom from './Components/NavbarCom';
-import Insights from './Components/Insights/Insights';
 import CoverPage from './Components/CoverPage';
-import Service from './Components/Service/Services';
+import Service from "./Components/Service/Services"
 import Journey from './Components/Journey/Journey';
+import ScrollRevealComponent from './Components/ScrollReveal';
+import Insights from './Components/Insights/Insights';
+import NavbarCom from './Components/NavbarCom';
 
 function App() {
     return (
       <>
         <CoverPage/>
-        <NavbarCom className="Navigation" />
+        <ScrollRevealComponent>
+          <NavbarCom/>
+        </ScrollRevealComponent>
         <Insights />
         <Service />
         <Journey />

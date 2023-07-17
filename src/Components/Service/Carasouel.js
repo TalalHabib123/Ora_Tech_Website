@@ -17,7 +17,8 @@ function ControlledCarousel() {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=First slide&bg=373940"
+                src="https://www.cloud4c.com/sites/default/files/2021-12/oracle-cloud-services-1_0.jpg"
+                alt='Oracle Cloud Infrastructure'
                 />
                 <Carousel.Caption>
                 <h2>Oracle Cloud Infrastructure</h2>
@@ -26,7 +27,8 @@ function ControlledCarousel() {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Second slide&bg=282c34"
+                src="https://www.nagarro.com/hubfs/Oracle%20cloud%20infrastructure.png"
+                alt='Oracle Cloud Applications'
                 />
 
                 <Carousel.Caption>
@@ -36,7 +38,8 @@ function ControlledCarousel() {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Third slide&bg=20232a"
+                src="https://eu-images.contentstack.com/v3/assets/blt66983808af36a8ef/blt3fb601577ca72826/632dfca7378d7a585394478e/cloudarchitecture-ArtemisDiana_AlamyStockPhoto.jpg"
+                alt='Oracle Fusion Middleware'
                 />
 
                 <Carousel.Caption>
@@ -47,7 +50,8 @@ function ControlledCarousel() {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Third slide&bg=20232a"
+                src="https://www.hyperledger.org/wp-content/uploads/2016/08/hl_bg_banner.jpg"
+                alt='BlockChain'
                 />
 
                 <Carousel.Caption>
@@ -58,7 +62,8 @@ function ControlledCarousel() {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Third slide&bg=20232a"
+                src="https://s3-us-west-2.amazonaws.com/aa.techdemand.io/wp-content/uploads/2022/04/28112755/shutterstock_1806547387-1024x631.jpg"
+                alt='Hardware & Software'
                 />
 
                 <Carousel.Caption>
@@ -69,7 +74,8 @@ function ControlledCarousel() {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Third slide&bg=20232a"
+                src="https://www.ibis-solutions.rs/wp-content/uploads/2021/06/group-people-network-circuit-board-link-connection-technology-1-1.jpg"
+                alt='Enterprise Wide Integration'
                 />
 
                 <Carousel.Caption>
@@ -80,7 +86,8 @@ function ControlledCarousel() {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Third slide&bg=20232a"
+                src="https://as2.ftcdn.net/v2/jpg/01/34/31/79/1000_F_134317941_li6kQGjxitx2oDONDgHmshYWhbAZJeov.jpg"
+                alt='Software Solutions Experience'
                 />
 
                 <Carousel.Caption>
@@ -91,7 +98,8 @@ function ControlledCarousel() {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Third slide&bg=20232a"
+                src="https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/Hardware%20Section%201.jpeg"
+                alt='Hardware Solutions Experience'
                 />
 
                 <Carousel.Caption>

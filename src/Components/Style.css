@@ -29,6 +29,11 @@
   padding: 10%;
 }
 
+.slide-show .img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 hr{
   width: 50%;
