@@ -1,18 +1,32 @@
 {
   "files": {
-    "main.css": "/Ora_Tech_Website/static/css/main.aac4b9bc.css",
-    "main.js": "/Ora_Tech_Website/static/js/main.1909b895.js",
+    "main.css": "/Ora_Tech_Website/static/css/main.86dee2c4.css",
+    "main.js": "/Ora_Tech_Website/static/js/main.1d18ba91.js",
     "static/js/787.14c871d0.chunk.js": "/Ora_Tech_Website/static/js/787.14c871d0.chunk.js",
     "static/media/insights_half.jpg": "/Ora_Tech_Website/static/media/insights_half.f9f8cab71abf44f0800c.jpg",
+    "static/media/USF.png": "/Ora_Tech_Website/static/media/USF.8af1ed29140e97699d30.png",
     "static/media/insight_full.jpg": "/Ora_Tech_Website/static/media/insight_full.2195a8833a4660e58b88.jpg",
+    "static/media/O_P.jpeg": "/Ora_Tech_Website/static/media/O_P.239130756688773b6dd0.jpeg",
+    "static/media/Meezan.png": "/Ora_Tech_Website/static/media/Meezan.cbfe450c7d36a04092bf.png",
     "static/media/CoverPage.jpg": "/Ora_Tech_Website/static/media/CoverPage.4fa56a990d4ff2f4130e.jpg",
+    "static/media/Ufone.jpg": "/Ora_Tech_Website/static/media/Ufone.698bc8d3c0a1c59f2f02.jpg",
+    "static/media/Faysal.png": "/Ora_Tech_Website/static/media/Faysal.d1491687e0a7c4afbb60.png",
+    "static/media/POL.jpg": "/Ora_Tech_Website/static/media/POL.4a2be85e3059cd98ad4e.jpg",
+    "static/media/mobilink.jpg": "/Ora_Tech_Website/static/media/mobilink.6626a40db27a335c788e.jpg",
+    "static/media/dp_world.png": "/Ora_Tech_Website/static/media/dp_world.00c5698131f331a72575.png",
+    "static/media/askari.jpg": "/Ora_Tech_Website/static/media/askari.b623aa2dd025fa06b7c4.jpg",
+    "static/media/HBL.jpg": "/Ora_Tech_Website/static/media/HBL.211eb5e72d627c99f7bb.jpg",
+    "static/media/BHP.jpg": "/Ora_Tech_Website/static/media/BHP.20fde3a2f87512e35b04.jpg",
+    "static/media/kufpec.png": "/Ora_Tech_Website/static/media/kufpec.2a4b2b7078550bfbb84b.png",
+    "static/media/pta.jpg": "/Ora_Tech_Website/static/media/pta.fb1067e3848b5182de67.jpg",
+    "static/media/SSGC.jpg": "/Ora_Tech_Website/static/media/SSGC.3095b6d63493d7a6d4ab.jpg",
     "index.html": "/Ora_Tech_Website/index.html",
-    "main.aac4b9bc.css.map": "/Ora_Tech_Website/static/css/main.aac4b9bc.css.map",
-    "main.1909b895.js.map": "/Ora_Tech_Website/static/js/main.1909b895.js.map",
+    "main.86dee2c4.css.map": "/Ora_Tech_Website/static/css/main.86dee2c4.css.map",
+    "main.1d18ba91.js.map": "/Ora_Tech_Website/static/js/main.1d18ba91.js.map",
     "787.14c871d0.chunk.js.map": "/Ora_Tech_Website/static/js/787.14c871d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aac4b9bc.css",
-    "static/js/main.1909b895.js"
+    "static/css/main.86dee2c4.css",
+    "static/js/main.1d18ba91.js"
   ]
 }
