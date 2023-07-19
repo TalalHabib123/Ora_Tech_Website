@@ -15,7 +15,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(135, 245, 212);
   overflow: hidden;
 }
 
@@ -26,6 +26,7 @@
   height: 100%;
   overflow: hidden;
   font-weight: bold;
+  font-style: oblique;
   font-size: 3.75rem;
   padding-bottom: 1%;
 
@@ -42,7 +43,9 @@
 .finance h1{
   padding-top: 3%;
   text-align: center;
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 2.25rem;
+  font-family: 'Lumanosimo', cursive;
 }
 
 .oil{
@@ -56,7 +59,9 @@
 .oil h1{
   padding-top: 3%;
   text-align: center;
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 2.25rem;
+  font-family: 'Lumanosimo', cursive;
 }
 
 .logistic{
@@ -70,7 +75,9 @@
 .logistic h1{
   padding-top: 3%;
   text-align: center;
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 2.25rem;
+  font-family: 'Lumanosimo', cursive;
 }
 
 .telecom{
@@ -84,7 +91,9 @@
 .telecom h1{
   padding-top: 3%;
   text-align: center;
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 2.25rem;
+  font-family: 'Lumanosimo', cursive;
 }
 
 .other{
@@ -98,7 +107,9 @@
 .other h1{
   padding-top: 3%;
   text-align: center;
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 2.25rem;
+  font-family: 'Lumanosimo', cursive;
 }
 
 .slide-show{
@@ -366,10 +377,10 @@ hr{
 }
 
 .card-image{
-  max-width: 200px;
-  max-height: 200px;
-  min-height: 100px;
-  min-width: 100px;
+  max-width: 110px;
+  max-height: 110px;
+  min-height: 110px;
+  min-width: 110px;
   width: 100%;
   height: 100%;
 }
