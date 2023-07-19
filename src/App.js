@@ -5,6 +5,7 @@ import Journey from './Components/Journey/Journey';
 import ScrollRevealComponent from './Components/ScrollReveal';
 import Insights from './Components/Insights/Insights';
 import NavbarCom from './Components/NavbarCom';
+import Clientele from './Components/Clientele/Clientel';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
         <Insights />
         <Service />
         <Journey />
+        <Clientele />
       </>
   );
 }

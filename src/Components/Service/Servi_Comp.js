@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "../Style.css";
 import styled from 'styled-components';
 import ControlledCarousel from './Carasouel';
@@ -18,10 +18,8 @@ const Card = styled.div`
   justify-content:center;
   align-items:center;
   text-align: center;
-  padding-top:30%;
-  padding-bottom:30%;
-  padding-left:30%;
-  padding-right:30%;
+  padding-top:40%;
+  padding-bottom:40%;
   color:#ffffff;
   font-size: 2rem;
   background-repeat: no-repeat;
@@ -29,8 +27,22 @@ const Card = styled.div`
   font-weight: bold;
 `;
 const Servi_Comp = () => {
-    let win_width=window.innerWidth;
-    if(win_width>500){
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+    if(windowWidth>700){
         return (
             <CardGridWrapper>
                 <Card style={{background:'url(https://www.cloud4c.com/sites/default/files/2021-12/oracle-cloud-services-1_0.jpg) center / cover'}}>Oracle Cloud Infrastructure</Card>
