@@ -3,41 +3,65 @@ import Cards from "./Cards";
 import ReactPlayer from "react-player";
 import "../Style.css";
 
+//Images Imports
+import Meezan from "../Clientele/Images/Finance/Meezan.png";
+import UBL from "../Clientele/Images/Finance/ubl.png";
+import HBL from "../Clientele/Images/Finance/HBL.jpg";
+import MCB from "../Clientele/Images/Finance/mcb.jpeg";
+import Askari from "../Clientele/Images/Finance/askari.jpg";
+import Faysal from "../Clientele/Images/Finance/Faysal.png";
+import Allied from "../Clientele/Images/Finance/allied.png";
+import NSRP from "../Clientele/Images/Finance/nsrp.png";
+import Mobilink from "../Clientele/Images/Finance/mobilink.jpg";
+
+
+import Ufone from "../Clientele/Images/Telecom/Ufone.jpg";
+import PTA from "../Clientele/Images/Telecom/pta.jpg";
+import PTCL from "../Clientele/Images/Telecom/ptcl.png";
+import USF from "../Clientele/Images/Telecom/USF.png";
+import Telenor from "../Clientele/Images/Telecom/telenor.jpeg";
+
+import ARL from "../Clientele/Images/Oil_Gas/atrl.png";
+import SSGC from "../Clientele/Images/Oil_Gas/SSGC.jpg";
+import POL from "../Clientele/Images/Oil_Gas/POL.jpg";
+import OP from "../Clientele/Images/Oil_Gas/O_P.jpeg";
+
+import BHP from "../Clientele/Images/Logistics/BHP.jpg";
+import DP from "../Clientele/Images/Logistics/dp_world.png";
+import KUFPEC from "../Clientele/Images/Logistics/kufpec.png";
+
 const Clientele =()=>{
     const Financial_Sector=[
-        {imagePath:'' , AltText:'Allied Bank'},
-        {imagePath:'' , AltText:'HBL Bank'},
-        {imagePath:'' , AltText:'Meezan Bank'},
-        {imagePath:'' , AltText:''},
-        {imagePath:'' , AltText:''},
-        {imagePath:'' , AltText:''},
-        {imagePath:'' , AltText:'Meezan Bank'},
-        {imagePath:'' , AltText:''},
-        {imagePath:'' , AltText:''},
-        {imagePath:'' , AltText:''}
+        {imagePath:UBL , AltText:'UBL Bank'},
+        {imagePath:HBL , AltText:'HBL Bank'},
+        {imagePath:Meezan , AltText:'Meezan Bank'},
+        {imagePath:MCB , AltText:'MCB Bank'},
+        {imagePath:Askari , AltText:'Askari'},
+        {imagePath:Faysal , AltText:'Faysal Bank'},
+        {imagePath:Allied , AltText:'Allied Bank'},
+        {imagePath:NSRP , AltText:'NRSP Bank'},
+        {imagePath:Mobilink , AltText:'Mobilink Bank'}
     ];
 
     const telecom_Sector=[
-        {imagePath:'' , AltText:'Allied Bank'},
-        {imagePath:'' , AltText:'HBL Bank'},
-        {imagePath:'' , AltText:'Meezan Bank'},
-        {imagePath:'' , AltText:''},
-        {imagePath:'' , AltText:''}
+        {imagePath:Ufone , AltText:'Ufone'},
+        {imagePath:PTA , AltText:'PTA'},
+        {imagePath:PTCL , AltText:'PTCL'},
+        {imagePath:USF , AltText:'Universal Service Fund'},
+        {imagePath:Telenor , AltText:'Telenor'}
     ];
 
     const oil_sector=[
-        {imagePath:'' , AltText:'Allied Bank'},
-        {imagePath:'' , AltText:'HBL Bank'},
-        {imagePath:'' , AltText:'Meezan Bank'},
-        {imagePath:'' , AltText:''},
-        {imagePath:'' , AltText:''},
-        {imagePath:'' , AltText:''}
+        {imagePath:ARL , AltText:'Attock Refinery'},
+        {imagePath:OP , AltText:'Orient Petroleum'},
+        {imagePath:POL , AltText:'Pakistan Oilrefinery'},
+        {imagePath:SSGC , AltText:'SSGC'}
     ];
 
     const logistic_Sector=[
-        {imagePath:'' , AltText:'Allied Bank'},
-        {imagePath:'' , AltText:'HBL Bank'},
-        {imagePath:'' , AltText:'Meezan Bank'},
+        {imagePath:BHP , AltText:'BHP'},
+        {imagePath:DP , AltText:'DP World'},
+        {imagePath:KUFPEC , AltText:'KUFPEC'},
     ];
 
     return(

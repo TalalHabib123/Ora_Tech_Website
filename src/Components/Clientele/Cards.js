@@ -10,10 +10,10 @@ const Cards=({cardList})=>{
             <Card key={index} className="custom-card-sec">
             <Card.Body className="card-body-comp">
                 <CardImg 
-                src={card.imagePath} 
-                alt={card.AltText} 
-                className="card-image"
-                style={{ objectFit: 'cover', objectPosition: 'center'}}
+                    src={card.imagePath} 
+                    alt={card.AltText} 
+                    className="card-image"
+                    style={{ objectFit: 'contain', objectPosition: 'center'}}
                 />
             </Card.Body>
             </Card>

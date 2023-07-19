@@ -29,6 +29,7 @@
   font-style: oblique;
   font-size: 3.75rem;
   padding-bottom: 1%;
+  overflow: hidden;
 
 }
 
@@ -46,6 +47,7 @@
   font-weight: bold;
   font-size: 2.25rem;
   font-family: 'Lumanosimo', cursive;
+  overflow: hidden;
 }
 
 .oil{
@@ -62,6 +64,7 @@
   font-weight: bold;
   font-size: 2.25rem;
   font-family: 'Lumanosimo', cursive;
+  overflow: hidden;
 }
 
 .logistic{
@@ -78,6 +81,7 @@
   font-weight: bold;
   font-size: 2.25rem;
   font-family: 'Lumanosimo', cursive;
+  overflow: hidden;
 }
 
 .telecom{
@@ -94,6 +98,7 @@
   font-weight: bold;
   font-size: 2.25rem;
   font-family: 'Lumanosimo', cursive;
+  overflow: hidden;
 }
 
 .other{
@@ -110,6 +115,7 @@
   font-weight: bold;
   font-size: 2.25rem;
   font-family: 'Lumanosimo', cursive;
+  overflow: hidden;
 }
 
 .slide-show{
@@ -344,11 +350,13 @@ hr{
 .custom-card-sec {
   margin: 10px;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .card-body-comp {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .icon-container {
@@ -377,10 +385,10 @@ hr{
 }
 
 .card-image{
-  max-width: 110px;
-  max-height: 110px;
-  min-height: 110px;
-  min-width: 110px;
+  max-width: 130px;
+  max-height: 130px;
+  min-height: 130px;
+  min-width: 130px;
   width: 100%;
   height: 100%;
 }
