@@ -6,6 +6,105 @@
   background-size: cover;
 }
 
+.collapsed-card-body{
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(158, 148, 134);
+}
+
+.collapsed{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column
+}
+
+.collapse-link-toggle{
+  width: 100%;
+  padding-bottom: 3%;
+  color: #00000000;
+}
+
+.collapsible-link {
+  /* Remove the border on the link */
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #00000000 !important;
+  font-weight: bold;
+}
+
+.collapsed-card-container {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.collapsed-card{
+  min-width: 100vw;
+}
+
+.collapsed-card-transition-enter {
+  opacity: 0;
+}
+
+.collapsed-card-transition-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.collapsed-card-transition-exit {
+  opacity: 1;
+}
+
+.collapsed-card-transition-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.timeline{
+  justify-content: center;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  width: 100%;
+  height: 100%;
+}
+
+.timeline .my-card{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline .gxPRma{
+  margin: 0% !important;
+}
+
+.timeline .ldwCye{
+  display: none;
+}
+
+.timeline .hBaxfl{
+  display: none;
+}
+
+.timeline .my-card-media{
+  border: none;
+  width: 80%;
+  height: 200px;
+  background-color: #33a6e9be;
+  image-resolution: 100%;
+  margin: 0%;
+  border-radius: 0%;
+  padding: 0%;
+  padding-top: 4%;
+}
+
+
 .clientele-body{
   width: 100%;
   padding-top: 5%;
@@ -596,3 +695,5 @@ hr{
       padding-right: 15%;
     }
 }
+
+

@@ -1,6 +1,7 @@
 import React from "react";
 import "../Style.css";
 import Servi_Comp from "./Servi_Comp";
+import CollapsibleComponent from "./Collapsed_Comp";
 
 function Service(){
     return(
@@ -9,6 +10,7 @@ function Service(){
                 Our Services
             </h1>
             <Servi_Comp />
+            <CollapsibleComponent />
         </div>
     );
 }
