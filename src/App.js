@@ -6,6 +6,7 @@ import ScrollRevealComponent from './Components/ScrollReveal';
 import Insights from './Components/Insights/Insights';
 import NavbarCom from './Components/NavbarCom';
 import Clientele from './Components/Clientele/Clientel';
+import Career from './Components/Career/Career';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
         <Service />
         <Journey />
         <Clientele />
+        <Career />
       </>
   );
 }

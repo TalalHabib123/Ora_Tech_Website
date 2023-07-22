@@ -542,7 +542,11 @@ hr{
   padding-bottom: 1%;
 }
 
-
+.timeline .my-title{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0%;
+  }
 
 @media only screen and (max-width:1500px){
   .quote p{
@@ -646,6 +650,38 @@ hr{
       height: 250px;
       overflow: hidden;
     }
+
+    .timeline{
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+
+    .timeline .my-title{
+      font-size: 0.9rem;
+    }
+    .timeline .jLJMJb{
+      padding: 0%;
+    }
+
+    .timeline .ZupoT{
+      padding: 0%;
+    }
+
+    .timeline .TuTlA{
+      margin-top: 2%;
+    }
+
+    .card-image{
+      max-width: 100px;
+      max-height: 100px;
+      min-height: 100px;
+      min-width: 100px;
+    }
+
+    .clientele-body .card{
+      --bs-card-spacer-y:0.35rem;
+      --bs-card-spacer-x: 0.35rem;
+    }
 }
 
 @media only screen and (max-height:500px) {
@@ -695,5 +731,55 @@ hr{
       padding-right: 15%;
     }
 }
+
+
+.career {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+  .career-content {
+    display: flex;
+    width: 70%;
+  }
+
+  .career-image {
+    flex: 1;
+    width: 100%;
+    margin-right: 5%;
+  }
+
+  .career-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .the-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  .the-content h1 {
+    margin-top: 0;
+    padding-bottom: 3%;
+    font-size: 4rem;
+  }
+
+  .the-content p{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
 
 

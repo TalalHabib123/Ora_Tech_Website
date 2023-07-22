@@ -25,7 +25,7 @@ const CollapsibleComponent = () => {
       <CSSTransition in={visible} timeout={300} classNames="collapsed-card-transition" unmountOnExit>
         <div className="collapsed-card-container">
           <CCard className="collapsed-card">
-            <CCardBody>
+            <CCardBody className='collapsed-card-body'>
                 <VerticalAlternatingTimeline />
             </CCardBody>
           </CCard>

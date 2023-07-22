@@ -3,6 +3,14 @@ import '../Style.css';
 import { Chrono } from 'react-chrono';
 
 const VerticalAlternatingTimeline = () => {
+    let switching_mode;
+    if(window.innerWidth>600)
+    {
+        switching_mode="VERTICAL_ALTERNATING";
+    }
+    else{
+        switching_mode="VERTICAL";
+    }
     const data = [
         {
             title:'Oracle Cloud Infastracture',
@@ -91,13 +99,13 @@ const VerticalAlternatingTimeline = () => {
         <div className='timeline'>
             <Chrono 
                 items={data} 
-                mode="VERTICAL_ALTERNATING" 
+                mode={switching_mode}
                 theme={{
                     primary: 'black',
-                    secondary: 'black',
+                    secondary: 'white',
                     titleColor: 'black',
                     cardBgColor:'#33a6e9be',
-                    titleColorActive: 'white',
+                    titleColorActive: 'black',
                 }}
                 classNames={{
                     card: 'my-card',
@@ -110,6 +118,7 @@ const VerticalAlternatingTimeline = () => {
                     point: 'custom-timeline-point',
                 }}
                 hideControls="true"
+                scrollable="true"
                 />
         </div>
   );
