@@ -764,19 +764,21 @@ hr{
 .contact-form{
   width: 50%;
   justify-content: center;
-  background-color: darkmagenta;
+  background: linear-gradient(to bottom right, rgb(107, 8, 8), rgb(37, 11, 11), rgb(7, 6, 82));
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5%;
+  padding: 1%;
 }
 
 .contact-form .row1{
   width: 100%;
+  top: 0%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
   justify-content: space-between;
 }
 
@@ -786,12 +788,40 @@ hr{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+  bottom: 0%  ;
 }
 
-.contact-form .highlight {
+.contact-form button{
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
+  padding: 2%;
+  overflow: hidden;
+  border: none;
 }
+
+
+.contact-form .highlight{
+  padding: 2%;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+}
+
+
+.contact-form .theAddress{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+}
+
+
 
 
 .carasouel-slides{
@@ -894,7 +924,7 @@ hr{
   flex-direction: column;
   align-items: center;
   background-color: #00000000;
-  background: linear-gradient(to bottom, black ,rgb(78, 14, 14),rgb(18, 18, 63),rgb(0, 0, 0),rgb(0, 0, 0),black);
+  background: linear-gradient(to bottom, rgb(94, 2, 2) ,rgb(29, 5, 5),rgb(18, 18, 63),rgb(19, 15, 12),rgb(17, 15, 15),black);
   overflow: hidden;
 }
 
