@@ -1,5 +1,4 @@
 import ReactPlayer from "react-player";
-import '../Style.css';
 
 const VideoPlayer=()=>{
     return(

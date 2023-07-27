@@ -1,7 +1,6 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import "./Style.css";
 
 const Bg_Particle=()=>{
     const particlesInit = useCallback(async engine => {

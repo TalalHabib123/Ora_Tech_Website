@@ -1,5 +1,4 @@
 import React from "react";
-import '../Style.css';
 import CardComponent from "./CardComponent";
 import { faBusinessTime, faBullseye, faBuilding, faMoneyBillTrendUp, faClipboard} from '@fortawesome/free-solid-svg-icons';
 

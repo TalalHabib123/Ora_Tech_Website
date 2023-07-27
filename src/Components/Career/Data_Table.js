@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleLeft, faAngleLeft, faAngleRight, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
-import "./style.css";
 import SearchBar from './SerachBar';
 import PopupModal from './PopUpCom';
 
@@ -207,6 +206,8 @@ const TableComponent = ({ data }) => {
             show={showModal}
             onHide={handleHideModal}
             onSave={handleSaveData}
+            Position={Position}
+            Department={Department}
         />
         </>
     );

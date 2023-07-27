@@ -1,7 +1,6 @@
 import React,{useState} from "react";
 import Cards from "./Cards";
 import ReactPlayer from "react-player";
-import "../Style.css";
 import { Carousel } from "react-bootstrap";
 //Images Imports
 import Meezan from "../Clientele/Images/Finance/Meezan.png";

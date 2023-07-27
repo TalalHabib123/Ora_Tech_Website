@@ -1,5 +1,4 @@
 import React from "react";
-import "../Style.css";
 import { TextField } from "@mui/material";
 import Address from "./Addresses";
 const ContactUs=()=>{

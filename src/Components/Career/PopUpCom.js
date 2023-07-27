@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal, Form } from 'react-bootstrap';
 
-const PopupModal = ({ show, onHide, onSave }) => {
+const PopupModal = ({ show, onHide, onSave, Position, Department }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -12,11 +12,12 @@ const PopupModal = ({ show, onHide, onSave }) => {
   };
 
   return (
-    <Modal show={show} onHide={onHide}>
+    <Modal show={show} onHide={onHide} className='PopUpModal'>
       <Modal.Header closeButton>
-        <Modal.Title>Popup Modal</Modal.Title>
+        <Modal.Title>{Department}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
+        <Modal.Title>{Position}</Modal.Title>
         <Form>
           <Form.Group controlId="name">
             <Form.Label>Name</Form.Label>

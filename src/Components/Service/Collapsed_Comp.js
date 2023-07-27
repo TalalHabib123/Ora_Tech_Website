@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { CButton} from '@coreui/react';
 import { CSSTransition } from 'react-transition-group';
-import "../Style.css";
 import Custom_Timeline from './CustomTimeline';
 
 const CollapsibleComponent = () => {

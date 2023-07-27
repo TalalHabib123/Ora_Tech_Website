@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import "../Style.css";
 import styled from 'styled-components';
 import ControlledCarousel from './Carasouel';
 

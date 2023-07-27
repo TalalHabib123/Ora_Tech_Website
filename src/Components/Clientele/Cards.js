@@ -1,7 +1,6 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import { CardImg } from "react-bootstrap";
-import "../Style.css";
 
 const Cards=({cardList})=>{
     return(

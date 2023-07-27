@@ -1,5 +1,4 @@
 import React from 'react';
-import "./style.css";
 const SearchBar = ({ filterData }) => {
   const handleChange = (e) => {
     filterData(e.target.value);

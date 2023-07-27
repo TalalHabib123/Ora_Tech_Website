@@ -1,5 +1,4 @@
 import React from "react";
-import "../Style.css";
 import TableComponent from "./Data_Table";
 
 const Career =()=>{

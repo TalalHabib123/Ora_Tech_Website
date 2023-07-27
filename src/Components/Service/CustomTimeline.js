@@ -1,7 +1,24 @@
-import React from "react";
-import "./thestyle.css";
+import React, {useEffect} from "react";
 
-const Custom_Timeline=()=>{
+const Custom_Timeline=({scrollToSectionId})=>{
+
+    useEffect(() => {
+        const scrollToSection = (sectionId) => {
+            if (!sectionId) {
+                const firstSection = document.getElementById("0");
+                if (firstSection) {
+                    firstSection.scrollIntoView({ behavior: "smooth", block:"center" });
+                }
+            } else {
+                const targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: "smooth", block: "center" });
+                }
+            }
+        };
+        scrollToSection(scrollToSectionId);
+    }, [scrollToSectionId]);
+
     return(
             <section>
                 <div className="Timeline-Body">
