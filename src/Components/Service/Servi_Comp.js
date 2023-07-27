@@ -6,11 +6,11 @@ import ControlledCarousel from './Carasouel';
 const CardGridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 40px;
   max-width: 80%;
   margin: 0 auto;
-  padding-top:4%;
-  padding-bottom:5%;
+  padding-top:2%;
+  padding-bottom:2%;
 `;
 
 const Card = styled.div`
@@ -18,8 +18,8 @@ const Card = styled.div`
   justify-content:center;
   align-items:center;
   text-align: center;
-  padding-top:40%;
-  padding-bottom:40%;
+  padding-top:30%;
+  padding-bottom:30%;
   color:#ffffff;
   font-size: 2rem;
   background-repeat: no-repeat;

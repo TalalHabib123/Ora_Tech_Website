@@ -5,13 +5,12 @@ import CollapsibleComponent from "./Collapsed_Comp";
 
 function Service(){
     return(
-        <div className="service">
+        <><div className="service">
             <h1>
                 Our Services
             </h1>
             <Servi_Comp />
-            <CollapsibleComponent />
-        </div>
+        </div><CollapsibleComponent /></>
     );
 }
 

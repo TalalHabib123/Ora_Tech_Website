@@ -6,33 +6,75 @@
   background-size: cover;
 }
 
+.navbar .nav-link.active{
+  color: #a8a8a8 !important;
+}
+
+#tsparticles{
+  z-index: -1;
+  position: relative;
+  opacity: 0.5;
+}
+
+.journey-video-two{
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #000000;
+}
+
+.navbar-com{
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar-nav{
+  align-items: center;
+}
+
+.collapsed-container{
+  background-color: #000000;  
+  padding: 0%;
+  overflow: scroll;
+}
+
+.collapsed-card{
+  background-color: #00000000;
+  padding: 0%;
+  margin: 0%;
+}
+
+.timeline .dccQoV:not(.using-icon).active{
+  background-color: #ffffff !important;
+}
+
 .collapsed-card-body{
   justify-content: center;
   align-items: center;
-  background-color: rgb(158, 148, 134);
-}
+  outline: none;
+  background: linear-gradient(to bottom, rgb(25, 22, 56),black,rgb(49, 22, 22));
+}         
 
-.collapsed{
+.collapsed-service{
   width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .collapse-link-toggle{
   width: 100%;
-  padding-bottom: 3%;
   color: #00000000;
 }
 
 .collapsible-link {
-  /* Remove the border on the link */
   width: 100%;
   border: none;
   cursor: pointer;
-  background-color: #00000000 !important;
+  outline: none;
+  color: #ffffff !important;
+  background-color: #000000 !important;
   font-weight: bold;
+  border-radius: 0% !important;
 }
 
 .collapsed-card-container {
@@ -73,149 +115,90 @@
   height: 100%;
 }
 
+
 .timeline .my-card{
-  height: 100%;
+  height: auto;
   width: 100%;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to bottom right, rgb(6, 53, 155) , rgb(134, 6, 6)) !important;
 }
+
+.timeline .jLJMJb{
+  height: 100%;
+}
+
 
 .timeline .gxPRma{
   margin: 0% !important;
 }
 
-.timeline .ldwCye{
+.timeline span{
   display: none;
 }
 
-.timeline .hBaxfl{
-  display: none;
+
+.timeline .bugOwh{
+  flex:0 0 0%;
 }
 
 .timeline .my-card-media{
   border: none;
-  width: 80%;
+  width: 90%;
   height: 200px;
-  background-color: #33a6e9be;
+  background-color: #ffffff00;
   image-resolution: 100%;
   margin: 0%;
   border-radius: 0%;
   padding: 0%;
-  padding-top: 4%;
+  padding-top: 5%;
+}
+
+.timeline .my-card-text{
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+  padding-bottom: 5%;
+  padding-left: 0%;
+  padding-right: 0%;
+  max-height: 400px;
+}
+
+.timeline .my-card-text p{
+  color: #ffffff;
+  font-size: 1rem;
 }
 
 
 .clientele-body{
   width: 100%;
   padding-top: 5%;
+  padding-bottom: 5%;
   height: 100%;
   color: rgb(0, 0, 0);
   display:flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(135, 245, 212);
+  background-image: url('./Journey/compute-ea4c57a4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
 .clients h1{
   padding-top: 7%;
-  color: black;
+  color: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
   overflow: hidden;
   font-weight: bold;
   font-style: oblique;
   font-size: 3.75rem;
-  padding-bottom: 1%;
-  overflow: hidden;
-
-}
-
-.finance{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-}
-
-.finance h1{
-  padding-top: 3%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.25rem;
-  font-family: 'Lumanosimo', cursive;
+  padding-bottom: 4%;
   overflow: hidden;
 }
 
-.oil{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-}
-
-.oil h1{
-  padding-top: 3%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.25rem;
-  font-family: 'Lumanosimo', cursive;
-  overflow: hidden;
-}
-
-.logistic{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-}
-
-.logistic h1{
-  padding-top: 3%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.25rem;
-  font-family: 'Lumanosimo', cursive;
-  overflow: hidden;
-}
-
-.telecom{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-}
-
-.telecom h1{
-  padding-top: 3%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.25rem;
-  font-family: 'Lumanosimo', cursive;
-  overflow: hidden;
-}
-
-.other{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-}
-
-.other h1{
-  padding-top: 3%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.25rem;
-  font-family: 'Lumanosimo', cursive;
-  overflow: hidden;
-}
 
 .slide-show{
   padding-left: 10%;
@@ -298,16 +281,16 @@ hr{
   font-size: larger;
 }
 
-.navbar{
-  text-align: center;
-  justify-content: center;
-}
-
 .service{
   width: 100%;
   margin: 0%;
   background-color: rgb(158, 148, 134);
+  background-image: url('./Service/172hg3fmsrv4ajwr.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 
 .insights{
   color: rgb(0, 0, 0);
@@ -316,7 +299,7 @@ hr{
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #ffffff00;
   overflow: hidden;
 }
 
@@ -327,7 +310,7 @@ hr{
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #ffffff00;
   overflow: hidden;
 }
 
@@ -348,15 +331,14 @@ hr{
 }
 
 .service h1{
-  padding-top: 5%;
-  color: black;
+  padding-top: 4%;
+  color: rgb(255, 255, 255);
   align-self: center;
   text-align: center;
   overflow: hidden;
   font-weight: bold;
   font-style: oblique;
   font-size: 3.75rem;
-  padding-bottom: 1%;
 }
 
 .expect_us h1{
@@ -383,34 +365,13 @@ hr{
 }
 
 .com_insights p{
-  padding-top: 3%;
+  padding-top: 0%;
   padding-left: 20%;
   padding-right: 20%;
   padding-bottom: 4%;
   font-size: 24px;
 }
 
-.row{
-  padding-left: 7%;
-  padding-right: 7%;
-  margin-bottom: 30px;
-}
-
-.col{
-  padding: 3%;
-  border: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #ffffff;
-  color: #000;
-}
-
-.col:hover{
-  background-color: #000000;
-  color: #ffffff;
-}
 
 .quote{
   width: 100%;
@@ -513,10 +474,10 @@ hr{
 }
 
 .journey-video{
-  padding-top: 4%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 4%;
+  padding-top: 2%;
+  padding-left: 16%;
+  padding-right: 16%;
+  padding-bottom: 0%;
 }
 
 .journey{
@@ -526,20 +487,19 @@ hr{
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: #ffffff;
   overflow: hidden;
+  padding-bottom: 6%;
 }
 
 .journey h1{
-  padding-top: 7%;
-  color: black;
+  padding-top: 6%;
+  color: rgb(0, 0, 0);
   width: 100%;
   height: 100%;
   overflow: hidden;
   font-weight: bold;
   font-style: oblique;
   font-size: 3.75rem;
-  padding-bottom: 1%;
 }
 
 .timeline .my-title{
@@ -619,8 +579,6 @@ hr{
 
     .quote{
       background-color:rgba(0,0,0,.9);
-      background-image: url('./Images/insights_half.jpg');
-      background-size: cover;
     }
 
     .quote p{
@@ -732,54 +690,240 @@ hr{
     }
 }
 
+.overall-career{
+  background-color: #ffffff00;
+}
+
+.divoftable{
+  padding-bottom: 2%;
+}
+
+
 
 .career {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding-top: 4%;
+    padding-top: 6%;
     padding-bottom: 4%;
+    background-color: #00000000;
   }
 
-  .career-content {
-    display: flex;
-    width: 70%;
-  }
 
-  .career-image {
-    flex: 1;
-    width: 100%;
-    margin-right: 5%;
-  }
-
-  .career-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .the-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
-  }
-
-  .the-content h1 {
+  .career h1 {
     margin-top: 0;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
     font-size: 4rem;
+    text-align: center;
   }
 
-  .the-content p{
+  .career p{
     text-align: center;
     font-size: 1.5rem;
   }
 
+.contact-us{
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex-direction: row;
+}
+
+.addresses{
+  width: 50%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(119, 119, 119, 0.753);
+  padding: 5%;
+}
+
+.addresses .the-fields{
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.addresses .text-field{
+  margin-top: 1%;
+  width: 100%;
+  color: #ffffff;
+}
+
+.addresses .thebutton{
+  display: flex;
+  align-self: flex-end;
+  margin-top: 5%;
+}
+
+.contact-form{
+  width: 50%;
+  justify-content: center;
+  background-color: darkmagenta;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.contact-form .row1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-form .row2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-form .highlight {
+  background-color: #000000;
+  color: #fff;
+}
 
 
+.carasouel-slides{
+  width: 100%;
+  height: 100%;
+  background-color: #00000000;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.carasouel-slides .custom-cara-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.custom-cara-2 .item-2{
+  height: 700px;
+  width: 100%;
+}
+
+
+.custom-cara-2 .caption-2{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  left: 0%;
+}
+
+.custom-cara-2 .carousel-control-next{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(85, 84, 84, 0.493));
+}
+
+.custom-cara-2 .carousel-control-prev{
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(85, 84, 84, 0.493));
+}
+
+.custom-cara-2 span{
+  height: 4rem;
+  width: 4rem;
+}
+
+.Profile{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin: 5%;
+  flex-direction: row;
+  background: linear-gradient(to right, rgb(17, 17, 44),rgb(78, 21, 21));
+  border-radius: 30px;
+  box-shadow: 0 8px 8px #0000009c;
+}
+
+.Profile_Heading{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.Profile_Heading h1{
+  color: #ffffff;
+}
+
+.Profile_Redriector{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.Profile_Redriector button{
+  padding: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 30px;
+  color: #ffffff;
+  background: linear-gradient(to bottom right, rgba(28, 28, 255, 0.884) , rgb(0, 0, 0) , rgba(182, 47, 47, 0.753));
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.Profile_Redriector button:hover{
+  transform: scale(1.15);
+}
+
+.Policy{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.com_policy h1{
+  padding-top: 5%;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 3.75rem;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+.com_policy p{
+  padding-top: 0%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 4%;
+  font-size: 1.35rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.navbar a{
+  color: #ffffff !important;
+}
+
+.bg-body-tertiary{
+  background-color: #000000 !important;
+}

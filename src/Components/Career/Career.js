@@ -2,7 +2,6 @@ import React from "react";
 import "../Style.css";
 import TableComponent from "./Data_Table";
 
-
 const Career =()=>{
 
     const data = [
@@ -37,23 +36,13 @@ const Career =()=>{
         // ... Add more data here
     ];
     return(
-        <div>
+        <div className="overall-career">
             <div className="career">
-                <div className="career-content">
-                    <div className="career-image">
-                        <img src='https://media.istockphoto.com/id/1271291959/vector/business-line-or-development-process.jpg?s=612x612&w=0&k=20&c=g0OQGANYKu_CfnPHjgAPVqboJXe35HJHc1I5v4ot14A=' alt='Career Background' className="the-image"/>
-                    </div>
-                    <div className="the-content">
-                        <h1>
-                            Career
-                        </h1>
-                        <p>
-                            We Help To Get The Best Job And Find A Talent, While offering competitive salaries to our employees.
-                        </p>
-                    </div>
-                </div>
+                <h1>
+                    Career
+                </h1>
             </div>
-            <div>
+            <div className="divoftable">
                 <TableComponent data={data}/>
             </div>
         </div>

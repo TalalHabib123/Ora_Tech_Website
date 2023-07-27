@@ -3,11 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleLeft, faAngleLeft, faAngleRight, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import "./style.css";
 import SearchBar from './SerachBar';
+import PopupModal from './PopUpCom';
 
 const TableComponent = ({ data }) => {
     const rowsPerPage = 10;
     const [currentPage, setCurrentPage] = useState(1);
-    const [RenderData, setRenderData] = useState(data);    
+    const [RenderData, setRenderData] = useState(data);  
+    
+    const [Position, setPosition] = useState(null);  
+    const [Department, setDepartment] = useState(null);  
     const handleFilterData = (searchValue) => {
         if(searchValue===''){
             setCurrentPage(1);
@@ -25,12 +29,11 @@ const TableComponent = ({ data }) => {
 
     };
 
-
-
-
-    const handleClick = (rowId) => {
-        // Call a function to send the row ID to another component or handle the data as needed
-        console.log(`Row ID: ${rowId}`);
+    const handleClick = (Position, Department) => {
+        console.log(Position, Department);
+        setShowModal(true);
+        setPosition(Position);
+        setDepartment(Department);
     };
 
     const totalPages = Math.ceil(RenderData.length / rowsPerPage);
@@ -71,7 +74,7 @@ const TableComponent = ({ data }) => {
             <td className='postion-row'>{row.name}</td>
             <td className='depart-row'>{row.age}</td>
             <td className='button-row'>
-            <button onClick={() => handleClick(row.id)}>Apply Now</button>
+            <button onClick={() => handleClick(row.name, row.age)}>Apply Now</button>
             </td>
         </tr>
         ));
@@ -167,10 +170,22 @@ const TableComponent = ({ data }) => {
         );
     };
 
+    const [showModal, setShowModal] = useState(false);
+    const [formData, setFormData] = useState({});
+
+    const handleHideModal = () => {
+        setShowModal(false);
+    };
+
+    const handleSaveData = (data2) => {
+        // Here, 'data' will contain the form field values from the modal
+        setFormData(data2);
+    };
+
     return (
-        <div className='table-div'>
+        <><div className='table-div'>
             <h1>
-                Available Vacancies
+                Job Listings
             </h1>
             <SearchBar filterData={handleFilterData} />
             <table className='the-table'>
@@ -188,6 +203,12 @@ const TableComponent = ({ data }) => {
                 {renderPagination()}
             </div>
         </div>
+        <PopupModal
+            show={showModal}
+            onHide={handleHideModal}
+            onSave={handleSaveData}
+        />
+        </>
     );
 };
 

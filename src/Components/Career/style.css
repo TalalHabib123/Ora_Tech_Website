@@ -1,9 +1,12 @@
 .table-div{
     display: flex;
     flex-direction: column;
-    padding-left: 15%;
-    padding-right: 15%;
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #00000059;
+    border-radius: 10px
 }
 
 .the-table{
@@ -51,12 +54,12 @@ td{
     padding-bottom: 1rem;
     display: flex;
     justify-content: center;
-    padding-right: 9.95%;
 }
 
 .search-bar{
-    width: 100%;
+    width: 95%;
     justify-content: center;
+    align-self: center;
     margin-bottom: 0.75rem;
 }
 
@@ -82,10 +85,10 @@ input{
 
 .the-table button{
     border: none;
-    background-color: rgba(25, 40, 247, 0.726);
+    background: linear-gradient(to right, rgb(22, 22, 163) , rgb(121, 16, 16));
     color: #ffffff;
     font-weight: bold;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding: 0.25rem;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
