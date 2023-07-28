@@ -12,8 +12,8 @@ const PopupModal = ({ show, onHide, onSave, Position, Department }) => {
   };
 
   return (
-    <Modal show={show} onHide={onHide} className='PopUpModal'>
-      <Modal.Header closeButton>
+    <Modal show={show} className='PopUpModal'>
+      <Modal.Header>
         <Modal.Title>{Department}</Modal.Title>
       </Modal.Header>
       <Modal.Body>

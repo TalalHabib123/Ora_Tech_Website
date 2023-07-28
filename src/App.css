@@ -738,8 +738,9 @@ hr{
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(119, 119, 119, 0.753);
+  background-color: rgba(0, 0, 0, 0.459);
   padding: 5%;
+  color: #ffffff !important;
 }
 
 .addresses .the-fields{
@@ -749,27 +750,45 @@ hr{
   width: 100%;
 }
 
+.addresses form{
+  display: flex;
+  flex-direction: column;
+}
+
 .addresses .text-field{
   margin-top: 1%;
   width: 100%;
-  color: #ffffff;
 }
 
-.addresses .thebutton{
-  display: flex;
-  align-self: flex-end;
-  margin-top: 5%;
+
+.text-field label{
+  color: #ffffff !important;
 }
+
+.addresses .the-button{
+  margin-top: 2%;
+  color: #000000;
+  background-color: #ffffff;
+  align-self: flex-end;
+}
+
+.addresses .the-button:hover{
+  background-color: #8b8b8b;
+}
+
+
 
 .contact-form{
   width: 50%;
   justify-content: center;
-  background: linear-gradient(to bottom right, rgb(107, 8, 8), rgb(37, 11, 11), rgb(7, 6, 82));
+  background: linear-gradient(to bottom right, rgba(107, 8, 8, 0.842), rgba(37, 11, 11, 0.829),rgba(7, 6, 82, 0.822));
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .contact-form .row1{
@@ -893,6 +912,7 @@ hr{
 
 .Profile_Heading h1{
   color: #ffffff;
+  padding: 1%;
 }
 
 .Profile_Redriector{
@@ -903,6 +923,8 @@ hr{
 }
 
 .Profile_Redriector button{
+  height: auto;
+  width: auto;
   padding: 4%;
   padding-top: 2%;
   padding-bottom: 2%;
