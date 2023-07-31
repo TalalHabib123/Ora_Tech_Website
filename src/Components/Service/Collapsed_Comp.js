@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CButton} from '@coreui/react';
 import { CSSTransition } from 'react-transition-group';
 import Custom_Timeline from './CustomTimeline';
 
-const CollapsibleComponent = () => {
-    const [visible, setVisible] = useState(false);
+const CollapsibleComponent = ({ selectedIndex, visible, setVisibility }) => {
+
+    const handleVisibilityChange = () => {
+      setVisibility(!visible);
+    };
 
     const handleClick=(targetId)=>{
       console.log(targetId);
@@ -19,6 +22,8 @@ const CollapsibleComponent = () => {
       }
     };
 
+    
+
   return (
     <div className="collapsed-service">
         <div className='collapse-link-toggle'>
@@ -26,7 +31,7 @@ const CollapsibleComponent = () => {
                 href="#"
                 onClick={(event) => {
                 event.preventDefault();
-                setVisible(!visible);
+                handleVisibilityChange();
                 }}
                 className="collapsible-link"
                 style={{ border: 'none' }}
@@ -36,7 +41,7 @@ const CollapsibleComponent = () => {
         </div>
       <CSSTransition in={visible} timeout={300} classNames="collapsed-card-transition" unmountOnExit>
         <div className="collapsed-container">
-              {visible && <Custom_Timeline />}
+              {visible && <Custom_Timeline scrollToSectionId={selectedIndex}/>}
         </div>
       </CSSTransition>
       {visible && 
@@ -45,7 +50,7 @@ const CollapsibleComponent = () => {
                   href="#"
                   onClick={(event) => {
                   event.preventDefault();
-                  setVisible(!visible);
+                  handleVisibilityChange();
                   handleClick(".collapsed-service");
                   }}
                   className="collapsible-link"
