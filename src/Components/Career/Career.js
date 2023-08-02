@@ -1,6 +1,6 @@
 import React from "react";
 import TableComponent from "./Data_Table";
-
+import FadeInSection from "../FadIn";
 const Career =()=>{
 
     const data = [
@@ -35,17 +35,18 @@ const Career =()=>{
         // ... Add more data here
     ];
     return(
-        <div className="overall-career">
-            <div className="career">
-                <h1>
-                    Career
-                </h1>
+        <FadeInSection>
+            <div className="overall-career">
+                <div className="career">
+                    <h1>
+                        Career
+                    </h1>
+                </div>
+                <div className="divoftable">
+                    <TableComponent data={data}/>
+                </div>
             </div>
-            <div className="divoftable">
-                <TableComponent data={data}/>
-            </div>
-        </div>
-        
+        </FadeInSection>
     );
 }
 

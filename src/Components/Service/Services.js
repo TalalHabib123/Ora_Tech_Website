@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import Servi_Comp from "./Servi_Comp";
 import CollapsibleComponent from "./Collapsed_Comp";
+import FadeInSection from "../FadIn";
 
 function Service(){
     const [selectedIndex, setSelectedIndex] = useState(null);
@@ -15,12 +16,12 @@ function Service(){
   };
 
     return(
-        <><div className="service">
+        <FadeInSection><div className="service">
             <h1>
                 Our Services
             </h1>
             <Servi_Comp onIndexClick={handleIndexClick}/>
-        </div><CollapsibleComponent selectedIndex={selectedIndex} visible={visible} setVisibility={setVisibility}/></>
+        </div><CollapsibleComponent selectedIndex={selectedIndex} visible={visible} setVisibility={setVisibility}/></FadeInSection>
     );
 }
 

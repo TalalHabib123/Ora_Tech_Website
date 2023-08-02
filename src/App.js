@@ -14,50 +14,51 @@ import Policy from './Components/Policy/Policy';
 import FooterCom from './Components/FooterCom';
 
 function App() {
-    const handleNavLinkClick = ({targetId}) => {
-      const targetElement = document.querySelector(targetId);
+    const handleNavLinkClick = (sectionId) => {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-      if (targetElement) {
-        const offsetTop = targetElement.offsetTop;
-        window.scrollTo({ top: offsetTop, behavior: 'smooth', block:"center" });
-      }
-    };
 
     return (
-      <>
-        <ScrollRevealComponent>
-          <NavbarCom handleNavLinkClick={handleNavLinkClick}/>
-        </ScrollRevealComponent>
-        <section id='home'>
-            <CoverPage/>
-        </section>
-        <section id='insight'>
-            <Insights />
-        </section>
-        <section id='services'>
-            <Service />
-        </section>
-        <section id='journey'>
-            <Journey />
-        </section>
-        <section id='clientele'>
-            <Clientele />
-        </section>
-        <section id='career'>
-            <Career />
-        </section>
-        <section id='contact'>
-            <ContactUs />
-        </section>
-        <section id='profile'>
-            <Profile />
-        </section>
-        <section id='policy'>
-            <Policy />
-        </section>
-        <FooterCom />
-        <Bg_Particle />
-      </>
+      <section>
+          <ScrollRevealComponent>
+            <NavbarCom handleNavLinkClick={handleNavLinkClick}/>
+          </ScrollRevealComponent>
+          <section id='home'>
+              <CoverPage/>
+          </section>
+          <section id='insight'>
+              <Insights />
+          </section>
+          <section id='services'>
+              <Service />
+          </section>
+          <section id='journey'>
+              <Journey />
+          </section>
+          <section id='clientele'>
+              <Clientele />
+          </section>
+          <section id='career'>
+              <Career />
+          </section>
+          <section id='contact'>
+              <ContactUs />
+          </section>
+          <section id='profile'>
+              <Profile />
+          </section>
+          <section id='policy'>
+              <Policy />
+          </section>
+          <section>
+            <FooterCom handleNavLinkClick={handleNavLinkClick}/>
+          </section>
+          <Bg_Particle />
+      </section>
   );
 }
 

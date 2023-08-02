@@ -5,11 +5,18 @@ const PopupModal = ({ show, onHide, onSave, Position, Department }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [cvFile, setCvFile] = useState(null);
 
-  const handleSave = () => {
-    onSave({ name, email, message });
+  const handleSave = (e) => {
+    e.preventDefault();
+    onSave({ name, email, message }, cvFile);
     onHide();
   };
+
+  const isFormValid = () => {
+    return name && email && message && cvFile;
+  };
+
 
   return (
     <Modal show={show} className='PopUpModal'>
@@ -25,6 +32,7 @@ const PopupModal = ({ show, onHide, onSave, Position, Department }) => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
           </Form.Group>
           <Form.Group controlId="email">
@@ -33,15 +41,24 @@ const PopupModal = ({ show, onHide, onSave, Position, Department }) => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </Form.Group>
           <Form.Group controlId="message">
-            <Form.Label>Message</Form.Label>
+            <Form.Label>Phone No</Form.Label>
             <Form.Control
-              as="textarea"
-              rows={3}
+              type='text'
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              required
+            />
+          </Form.Group>
+          <Form.Group controlId="cvFile">
+            <Form.Label>CV</Form.Label>
+            <Form.Control
+              type="file"
+              onChange={(e) => setCvFile(e.target.files[0])}
+              required
             />
           </Form.Group>
         </Form>
@@ -50,8 +67,8 @@ const PopupModal = ({ show, onHide, onSave, Position, Department }) => {
         <Button variant="secondary" onClick={onHide}>
           Close
         </Button>
-        <Button variant="primary" onClick={handleSave}>
-          Save
+        <Button variant="primary" onClick={handleSave} disabled={!isFormValid()}>
+          Submit
         </Button>
       </Modal.Footer>
     </Modal>

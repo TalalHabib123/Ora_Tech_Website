@@ -1,7 +1,7 @@
 import React from "react";
 import CardComponent from "./CardComponent";
 import { faBusinessTime, faBullseye, faBuilding, faMoneyBillTrendUp, faClipboard} from '@fortawesome/free-solid-svg-icons';
-
+import FadeInSection from "../FadIn";
 const Insights=()=>{
 
     const cardList = [
@@ -13,35 +13,43 @@ const Insights=()=>{
   ];
     return(
         <><div className="insights">
-            <div className="com_insights">
-                <h1>
-                    Company Insights
-                </h1>
-                <p>
-                    Founded by a group of Professionals with the skills and knowledge to meet market demands for services and solutions in collaboration with experts from around the world, who achieved management, leadership, and adherence to exacting quality standards while upholding our cultural values.
-                </p>
-            </div>
-            <div className="quote">
-                <p>
-                    Ora-Tech System provides IT consulting services on innovation, strategy, Infrastructure solutions, ERP Solutions and business transformation to our clients. As leaders in performance excellence, our consultants partner with clients in bringing effective solutions to meet the inherent challenges of critical business activities. This translates into better decision making processes and actions that produce results, giving a distinct business advantage in the marketplace.
-                </p>
-            </div>
-            <div className="vision">
-                <h1>
-                    Our Vision
-                </h1>
-                <hr/>
-                <p>
-                    "Ora-Tech facilitates every single entity to achieve their short and long term goals."
-                </p>
-                <hr/>
-            </div>
-            <div className="expect_us">
-                <h1>
-                    What we Help In:
-                </h1>
-            </div>
-            <CardComponent cardList={cardList} className="card_comps"/>
+            <FadeInSection>
+                <div className="com_insights">
+                    <h1>
+                        Company Insights
+                    </h1>
+                    <p>
+                        Founded by a group of Professionals with the skills and knowledge to meet market demands for services and solutions in collaboration with experts from around the world, who achieved management, leadership, and adherence to exacting quality standards while upholding our cultural values.
+                    </p>
+                </div>
+            </FadeInSection>
+            <FadeInSection>
+                <div className="quote">
+                    <p>
+                        Ora-Tech System provides IT consulting services on innovation, strategy, Infrastructure solutions, ERP Solutions and business transformation to our clients. As leaders in performance excellence, our consultants partner with clients in bringing effective solutions to meet the inherent challenges of critical business activities. This translates into better decision making processes and actions that produce results, giving a distinct business advantage in the marketplace.
+                    </p>
+                </div>
+            </FadeInSection>
+            <FadeInSection>
+                <div className="vision">
+                    <h1>
+                        Our Vision
+                    </h1>
+                    <hr/>
+                    <p>
+                        "Ora-Tech facilitates every single entity to achieve their short and long term goals."
+                    </p>
+                    <hr/>
+                </div>
+            </FadeInSection>
+            <FadeInSection>
+                <div className="expect_us">
+                    <h1>
+                        What we Help In:
+                    </h1>
+                </div>
+                <CardComponent cardList={cardList} className="card_comps"/>
+            </FadeInSection>
         </div>
         </>
     )

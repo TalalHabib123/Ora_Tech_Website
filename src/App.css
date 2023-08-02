@@ -326,7 +326,6 @@ hr{
 .vision p{
   padding-top: 2%;
   font-size: 30px;
-  font-family: 'Fasthand', cursive;
   overflow: hidden;
 }
 
@@ -342,7 +341,7 @@ hr{
 }
 
 .expect_us h1{
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 5%;
   color: black;
   overflow: hidden;
@@ -713,9 +712,15 @@ hr{
 @media only screen and (max-height:500px) {
   .slide-show{
       padding-left: 15%;
+      padding-top: 0%;
       padding-right:15%;
       padding-bottom: 5%;
       display: flex;
+    }
+
+    .service h1{
+      padding-bottom: 5%;
+      padding-top: 8%;
     }
 
     .slide-show .custom-cara{
@@ -773,7 +778,7 @@ hr{
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding-top: 6%;
+    padding-top: 5%;
     padding-bottom: 4%;
     background-color: #00000000;
   }
@@ -781,9 +786,11 @@ hr{
 
   .career h1 {
     margin-top: 0;
-    padding-bottom: 2%;
-    font-size: 4rem;
+    padding-bottom: 0%;
+    font-size: 3.75rem;
     text-align: center;
+    font-weight: bold;  
+    font-style: oblique;
   }
 
   .career p{
@@ -796,6 +803,7 @@ hr{
   display: flex;
   height: auto;
   flex-direction: row;
+  margin-top: 3%;
 }
 
 .addresses{
@@ -826,10 +834,15 @@ hr{
 .addresses .text-field{
   margin-top: 1%;
   width: 100%;
+  color: #ffffff !important;
 }
 
 
 .text-field label{
+  color: #ffffff !important;
+}
+
+.text-field div{
   color: #ffffff !important;
 }
 
@@ -1016,6 +1029,9 @@ hr{
   background-color: #00000000;
   background: linear-gradient(to bottom, rgb(94, 2, 2) ,rgb(29, 5, 5),rgb(18, 18, 63),rgb(19, 15, 12),rgb(17, 15, 15),black);
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
 }
 
 .com_policy h1{
@@ -1027,7 +1043,7 @@ hr{
   font-weight: bold;
   font-style: oblique;
   font-size: 3.75rem;
-  padding-bottom: 1%;
+  padding-bottom: 2%;
   text-align: center;
 }
 
@@ -1035,7 +1051,7 @@ hr{
   padding-top: 0%;
   padding-left: 20%;
   padding-right: 20%;
-  padding-bottom: 4%;
+  padding-bottom: 5%;
   font-size: 1.35rem;
   text-align: center;
   color: #ffffff;
@@ -1269,10 +1285,11 @@ input{
     padding-right: 0.5rem;
 }
 
-.table-div h1{
-    font-size: 3rem;
+.table-div h3{
+    font-size: 2.25rem;
     padding: 4%;
     text-align: center;
+    font-family: 'Lumanosimo', cursive;
 }
 
 
@@ -1377,4 +1394,178 @@ input{
 .theGridWrapper .service_card:hover{
   transform: scale(1.05);
   font-size: 1.85rem;
+}
+
+
+.Timeline-Row .mobile-content{
+  display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.mobile-content h1{
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+
+.mobile-content p{
+  font-size: 0.85rem;
+}
+
+@media only screen and (max-width:700px){
+  .Timeline-Row .mobile-content{
+    display: flex;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(to bottom right, blue,red);
+    border-radius: 3%;
+  }
+
+  .Timeline-Row{
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .Timeline-Row .Timeline-Title{
+    display: none;
+  }
+
+  .Timeline-Row .Timeline-Card{
+    display: none;
+  }
+
+  .Timeline-Row .left-content{
+    width: 5%;
+  }
+  .Timeline-Row .right-content{
+    width: 87%;
+    height: 100%;
+  }
+
+}
+
+.slide-show h2{
+  cursor: default;
+}
+
+.Profile_Redriector a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.addresses h1{
+  font-size: 3.75rem;
+}
+
+.contact-form button{
+  margin: 2%;
+  border-radius: 10px;
+}
+
+.contact-form button:hover{
+  transform: scale(1.05);
+}
+
+.nav-links a{
+  cursor: pointer;
+}
+
+.nav-links a:hover{
+  color: #a7a7a7 !important;
+}
+
+
+.fade-in-section {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+@media only screen and (max-width:700px){
+  .footer-addresses{
+    display: none;
+  }
+  .nav-links{
+    width: 100% !important;
+  }
+
+  .nav-links a{
+    font-size: 1rem;
+  }
+
+  .company- h5{
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .com_policy h1{
+    padding-top: 10%;
+    font-size: 2.15rem !important;
+  }
+
+  .com_policy p{
+    font-size: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .addresses h1{
+    font-size: 2.15rem !important;
+  }
+
+  .Profile_Heading h1{
+    font-size: 2.15rem;
+    padding-left: 10%;
+    text-align: center;
+  }
+
+  .Profile{
+    margin-bottom: 20%;
+  }
+
+  .contact-us{
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .clientele-body{
+    margin-bottom: 20%;
+  }
+
+  .journey{
+    margin-bottom: 20%;
+  }
+
+  #services{
+    margin-bottom: 20%;
+  }
+
+  .insights{
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+}
+
+.Policy{
+  margin: 0px;
 }

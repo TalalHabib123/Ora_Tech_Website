@@ -17,7 +17,9 @@ const ScrollRevealComponent = ({children}) => {
     }, []);
 
     return (
-        <div style={{ display: isVisible ? 'block' : 'none' }}>{children}</div>
+        <div style={{ display: isVisible ? 'block' : 'none',}}>
+            {children}
+        </div>
     );
 };
 

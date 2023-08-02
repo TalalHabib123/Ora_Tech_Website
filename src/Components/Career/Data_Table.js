@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleLeft, faAngleLeft, faAngleRight, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import SearchBar from './SerachBar';
 import PopupModal from './PopUpCom';
+import {saveJobApplication} from "../../Firebase_Setup/job_submission";
 
 const TableComponent = ({ data }) => {
     const rowsPerPage = 10;
@@ -176,16 +177,16 @@ const TableComponent = ({ data }) => {
         setShowModal(false);
     };
 
-    const handleSaveData = (data2) => {
-        // Here, 'data' will contain the form field values from the modal
+    const handleSaveData = (data2, cvFile) => {
         setFormData(data2);
+        saveJobApplication(formData,cvFile);
     };
 
     return (
         <><div className='table-div'>
-            <h1>
+            <h3>
                 Job Listings
-            </h1>
+            </h3>
             <SearchBar filterData={handleFilterData} />
             <table className='the-table'>
                 <thead>

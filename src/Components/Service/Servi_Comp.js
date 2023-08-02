@@ -25,6 +25,8 @@ const Card = styled.div`
   background-size: cover;
   font-weight: bold;
 `;
+
+
 const Servi_Comp = ({ onIndexClick }) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -44,7 +46,7 @@ const Servi_Comp = ({ onIndexClick }) => {
       onIndexClick(index); 
     };
 
-    if(windowWidth>700){
+    if(windowWidth>800){
         return (
             <CardGridWrapper className='theGridWrapper'>
                 <Card className='service_card' style={{background:'url(https://www.cloud4c.com/sites/default/files/2021-12/oracle-cloud-services-1_0.jpg) center / cover'}} onClick={() => handleClick(0)}>Oracle Cloud Infrastructure</Card>
@@ -60,7 +62,7 @@ const Servi_Comp = ({ onIndexClick }) => {
     }
     else{
         return(
-            <ControlledCarousel />
+            <ControlledCarousel Index_Set={handleClick}/>
         );
     }
   

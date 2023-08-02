@@ -18,6 +18,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2{
+  font-family: 'Lisu Bosa', serif !important;
+  font-weight: bold !important;
+}
+
+p, h3,h4, h5, h6{
+  font-family: 'PT Serif', serif !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

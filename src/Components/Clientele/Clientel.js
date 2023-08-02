@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import Cards from "./Cards";
 import ReactPlayer from "react-player";
 import { Carousel } from "react-bootstrap";
+import FadeInSection from "../FadIn";
 //Images Imports
 import Meezan from "../Clientele/Images/Finance/Meezan.png";
 import UBL from "../Clientele/Images/Finance/ubl.png";
@@ -70,54 +71,56 @@ const Clientele =()=>{
     };
 
     return(
-        <div className="clientele-body">
-            <div className="clients">
-                <h1 className="clients">
-                    Our Clientele
-                </h1>
+        <FadeInSection>
+                <div className="clientele-body">
+                    <div className="clients">
+                        <h1 className="clients">
+                            Our Clientele
+                        </h1>
+                    </div>
+                    <div className="carasouel-slides">
+                        <Carousel activeIndex={index} onSelect={handleSelect} 
+                        className='custom-cara-2'>
+                            <Carousel.Item className="item-2">
+                                <Carousel.Caption className="caption-2">
+                                    <h1>Finanace Sector</h1>
+                                    <Cards cardList={Financial_Sector}/>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+
+                            <Carousel.Item className="item-2">
+                                <Carousel.Caption className="caption-2">
+                                    <h1>Telecom Sector</h1>
+                                    <Cards cardList={telecom_Sector}/>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+
+                            <Carousel.Item className="item-2">
+                                <Carousel.Caption className="caption-2"  >
+                                    <h1>Oil & Gas Sector</h1>
+                                    <Cards cardList={oil_sector}/>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+
+                            <Carousel.Item className="item-2">
+                                <Carousel.Caption className="caption-2">
+                                    <h1>Logistics Sector</h1>
+                                    <Cards cardList={logistic_Sector}/>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+
+                            <Carousel.Item className="item-2">
+                                <Carousel.Caption className="caption-2">
+                                    <h1>Other Sector</h1>
+                                    <div className="journey-video">
+                                        <ReactPlayer url={'https://www.ora-tech.com/assets/videos/otherclientele.mp4'} controls={true}  width={"100%"} height={"90%"}/>
+                                    </div>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel> 
+                    </div>
             </div>
-            <div className="carasouel-slides">
-                <Carousel activeIndex={index} onSelect={handleSelect} 
-                className='custom-cara-2'>
-                    <Carousel.Item className="item-2">
-                        <Carousel.Caption className="caption-2">
-                            <h1>Finanace Sector</h1>
-                            <Cards cardList={Financial_Sector}/>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-
-                    <Carousel.Item className="item-2">
-                        <Carousel.Caption className="caption-2">
-                            <h1>Telecom Sector</h1>
-                            <Cards cardList={telecom_Sector}/>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-
-                    <Carousel.Item className="item-2">
-                        <Carousel.Caption className="caption-2"  >
-                            <h1>Oil & Gas Sector</h1>
-                            <Cards cardList={oil_sector}/>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-
-                    <Carousel.Item className="item-2">
-                        <Carousel.Caption className="caption-2">
-                            <h1>Logistics Sector</h1>
-                            <Cards cardList={logistic_Sector}/>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-
-                    <Carousel.Item className="item-2">
-                        <Carousel.Caption className="caption-2">
-                            <h1>Other Sector</h1>
-                            <div className="journey-video">
-                                <ReactPlayer url={'https://www.ora-tech.com/assets/videos/otherclientele.mp4'} controls={true}  width={"100%"} height={"90%"}/>
-                            </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel> 
-            </div>
-        </div>
+        </FadeInSection>
     );
 }
 

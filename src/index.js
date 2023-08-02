@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/js/bootstrap";
 import"bootstrap/dist/js/bootstrap.esm";
+import "./Firebase_Setup/firebase";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
