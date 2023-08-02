@@ -15,12 +15,11 @@ import FooterCom from './Components/FooterCom';
 
 function App() {
     const handleNavLinkClick = (sectionId) => {
-    const section = document.querySelector(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
+        const section = document.querySelector(sectionId);
+        if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
       <section>
