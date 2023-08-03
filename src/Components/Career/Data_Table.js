@@ -21,7 +21,7 @@ const TableComponent = ({ data }) => {
         else{
             const filteredResults = data.filter((item) => {
                 const { name, age } = item;
-                return name.toLowerCase().includes(searchValue.toLowerCase()) || age.toString().includes(searchValue);
+                return name.toLowerCase().includes(searchValue.toLowerCase()) || age.toLowerCase().includes(searchValue.toLowerCase());
             });
             setCurrentPage(1);
             setRenderData(filteredResults);         
